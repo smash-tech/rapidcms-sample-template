@@ -1,0 +1,467 @@
+ {
+    "id": "RC-TMPL-01",
+    "name": "Rapidcms Checkout",
+    "mobile": true,
+    "notes": "Initial Release 1.0",
+    "syntax": 4,
+    "version": 1.0,
+	"color_variations":{
+		variation_1:{
+			"hex","#DDCCDD",
+			"thumb_main" :"red_thumb_main.jpg",
+			"thumb_checkout" :"red_thumb_checkout.jpg",
+			"thumb_cart" :"red_thumb_cart.jpg",
+		},
+		variation_2:{
+			"hex","#FF44FF",
+			"thumb_main" :"blue_thumb_main.jpg",
+			"thumb_checkout" :"blue_thumb_checkout.jpg",
+			"thumb_cart" :"blur_thumb_cart.jpg",
+		},
+		variation_3:{
+			"hex","#FF3E3E",
+			"thumb_main" :"teal_thumb_main.jpg",
+			"thumb_checkout" :"teal_thumb_checkout.jpg",
+			"thumb_cart" :"teal_thumb_cart.jpg",
+		},
+		variation_4:{
+			"hex","#A2B3C4",
+			"thumb_main" :"gold_thumb_main.jpg",
+			"thumb_checkout" :"gold_thumb_checkout.jpg",
+			"thumb_cart" :"gold_thumb_cart.jpg",
+		},
+		variation_5	:{
+			"hex","#F4A4A2",
+			"thumb_main" :"brown_thumb_main.jpg",
+			"thumb_checkout" :"brown_thumb_checkout.jpg",
+			"thumb_cart" :"brown_thumb_cart.jpg",
+		},
+		
+	},
+	pages:{
+		checkout:{
+				 "form": {
+				"title": {
+					"css": {
+						"font-family": "Helvetica, Arial, sans-serif",
+						"font-size": "18pt;",
+						"letter-spacing": "0em;"
+					},
+					"html": "<strong>Enter your email address below to reserve _______... it's 100% FREE!</strong>"
+				},
+				"submit": {
+					"css": {
+						"background-color": "#ffcb01;",
+						"border-color": "#ffb403;",
+						"border-width": "0pt;",
+						"border-style": "solid;",
+						"font-family": "Helvetica, Arial, sans-serif",
+						"font-size": "14pt;",
+						"letter-spacing": "-0.1em;"
+					},
+					"html": "Free Instant Access &raquo;"
+				},
+				"privacy": {
+					"css": {
+						"font-family": "Helvetica, Arial, sans-serif",
+						"font-size": "12pt;",
+						"letter-spacing": "-0.1em;"
+					},
+					"html": "<div><i class=\"icon-lock\"></i>We hate SPAM and promise to keep your email address safe. </div>"
+				}
+			},
+		   
+			"elements": [
+				{
+					"id": "container--header-wrapper",
+					"name": "Main Heading Section",
+					"type": "container"
+				},{
+					"id": "text--main-heading",
+					"name": "Main Heading Section",
+					"type": "text"
+				},{
+					"id": "text--mainsub-heading",
+					"name": "Mainsub Heading Section",
+					"type": "text"
+				},{
+					"id": "text--main-subheading",
+					"name": "Main SubHeading Section",
+					"type": "text"
+				},{
+					"id": "container--banner-wrapper",
+					"name": "Banner Section",
+					"type": "container"
+				},{
+					"type": "image",
+					"id": "image--product_img",
+					"name": "Image Product",
+					"data": {
+						"max-width": 800
+					}
+				},{
+					"id": "text--banner-review-order",
+					"name": "Banner Review Order Section",
+					"type": "text"
+				},{
+					"id": "text--banner-subtitle",
+					"name": "Banner Heading Section",
+					"type": "text"
+				},{
+					"id": "container--description-wrapper",
+					"name": "description Section",
+					"type": "container"
+				},{
+					"id": "text--description-heading",
+					"name": "description Heading Section",
+					"type": "text"
+				},{
+					"id": "text--description-paragraph",
+					"name": "description Heading paragraph",
+					"type": "text"
+				},{
+					"type": "image",
+					"id": "image--descrpition-picture",
+					"name": "Image Descrpition",
+					"data": {
+						"max-width": 200
+					}
+				},{
+					"id": "container--blank-wrapper",
+					"name": "Blank Section",
+					"type": "container"
+				},{
+					"type": "container",
+					"id": "container--footer_links",
+					"name": "Footer Links"
+				},{
+					"type": "link",
+					"id": "link--footer_link_1",
+					"name": "#1 Footer Link"
+				},{
+					"type": "link",
+					"id": "link--footer_link_2",
+					"name": "#2 Footer Link"
+				},
+				{
+					"type": "link",
+					"id": "link--footer_link_3",
+					"name": "#3 Footer Link"
+				},{
+					"id": "text--legal-text",
+					"name": "Legal Text",
+					"type": "text"
+				},{
+					"id": "text--legal-text",
+					"name": "Legal Text",
+					"type": "text"
+				},{
+					"id": "text--banner-legal-text",
+					"name": "Banner Legal Text",
+					"type": "text"
+				},{
+					"id": "text--address-text",
+					"name": "Address Text",
+					"type": "text"
+				}
+				
+			]
+		},
+		index:{
+			"form": {
+					"title": {
+						"css": {
+							"font-family": "Helvetica, Arial, sans-serif",
+							"font-size": "18pt;",
+							"letter-spacing": "0em;"
+						},
+						"html": "<strong>Enter your email address below to reserve _______... it's 100% FREE!</strong>"
+					},
+					"submit": {
+						"css": {
+							"background-color": "#ffcb01;",
+							"border-color": "#ffb403;",
+							"border-width": "0pt;",
+							"border-style": "solid;",
+							"font-family": "Helvetica, Arial, sans-serif",
+							"font-size": "14pt;",
+							"letter-spacing": "-0.1em;"
+						},
+						"html": "Free Instant Access &raquo;"
+					},
+					"privacy": {
+						"css": {
+							"font-family": "Helvetica, Arial, sans-serif",
+							"font-size": "12pt;",
+							"letter-spacing": "-0.1em;"
+						},
+						"html": "<div><i class=\"icon-lock\"></i>We hate SPAM and promise to keep your email address safe. </div>"
+					}
+				},
+			   
+				"elements": [
+					{
+						"id": "container--header-wrapper",
+						"name": "Main Heading Section",
+						"type": "container"
+					},{
+						"id": "text--main-heading",
+						"name": "Main Heading Section",
+						"type": "text"
+					},{
+						"id": "text--main-subheading",
+						"name": "Main SubHeading Section",
+						"type": "text"
+					},{
+						"id": "text--feature-1",
+						"name": "Feature #1",
+						"type": "text"
+					},{
+						"id": "text--feature-2",
+						"name": "Feature #2",
+						"type": "text"
+					},{
+						"id": "text--feature-3",
+						"name": "Feature #3",
+						"type": "text"
+					},{
+						"id": "text--feature-4",
+						"name": "Feature #4",
+						"type": "text"
+					},{
+						"id": "text--right-heading",
+						"name": "Main Right SubHeading Section",
+						"type": "text"
+					},{
+						"id": "container--banner-wrapper",
+						"name": "Banner Section",
+						"type": "container"
+					},
+					{
+						"type": "image",
+						"id": "image--product_img",
+						"name": "Image Product",
+						"data": {
+							"max-width": 800
+						}
+					},{
+						"type": "image",
+						"id": "image--banner_img",
+						"name": "Image Banner",
+						"data": {
+							"max-width": 800
+						},
+					},{
+						"id": "text--banner-title",
+						"name": "Banner Heading Section",
+						"type": "text"
+					},{
+						"id": "text--banner-subtitle",
+						"name": "Banner Heading Section",
+						"type": "text"
+					},{
+						"id": "container--description-wrapper",
+						"name": "description Section",
+						"type": "container"
+					},{
+						"id": "text--description-heading",
+						"name": "description Heading Section",
+						"type": "text"
+					},{
+						"id": "text--description-paragraph",
+						"name": "description Heading paragraph",
+						"type": "text"
+					},{
+						"type": "image",
+						"id": "image--descrpition-picture",
+						"name": "Image Descrpition",
+						"data": {
+							"max-width": 200
+						}
+					},{
+						"id": "container--blank-wrapper",
+						"name": "Blank Section",
+						"type": "container"
+					},{
+						"type": "container",
+						"id": "container--footer_links",
+						"name": "Footer Links"
+					},{
+						"type": "link",
+						"id": "link--footer_link_1",
+						"name": "#1 Footer Link"
+					},
+					{
+						"type": "link",
+						"id": "link--footer_link_2",
+						"name": "#2 Footer Link"
+					},
+					{
+						"type": "link",
+						"id": "link--footer_link_3",
+						"name": "#3 Footer Link"
+					},{
+						"id": "text--legal-text",
+						"name": "Legal Text",
+						"type": "text"
+					},{
+						"id": "text--legal-text",
+						"name": "Legal Text",
+						"type": "text"
+					},
+					{
+						"id": "text--address-text",
+						"name": "Address Text",
+						"type": "text"
+					}
+					
+				]			
+		},
+		thanks:{
+			  "form": {
+				"title": {
+					"css": {
+						"font-family": "Helvetica, Arial, sans-serif",
+						"font-size": "18pt;",
+						"letter-spacing": "0em;"
+					},
+					"html": "<strong>Enter your email address below to reserve _______... it's 100% FREE!</strong>"
+				},
+				"submit": {
+					"css": {
+						"background-color": "#ffcb01;",
+						"border-color": "#ffb403;",
+						"border-width": "0pt;",
+						"border-style": "solid;",
+						"font-family": "Helvetica, Arial, sans-serif",
+						"font-size": "14pt;",
+						"letter-spacing": "-0.1em;"
+					},
+					"html": "Free Instant Access &raquo;"
+				},
+				"privacy": {
+					"css": {
+						"font-family": "Helvetica, Arial, sans-serif",
+						"font-size": "12pt;",
+						"letter-spacing": "-0.1em;"
+					},
+					"html": "<div><i class=\"icon-lock\"></i>We hate SPAM and promise to keep your email address safe. </div>"
+				}
+			},
+		   
+			"elements": [
+				{
+					"id": "container--header-wrapper",
+					"name": "Main Heading Section",
+					"type": "container"
+				},{
+					"id": "text--main-heading",
+					"name": "Main Heading Section",
+					"type": "text"
+				},{
+					"id": "text--main-subheading",
+					"name": "Main SubHeading Section",
+					"type": "text"
+				},{
+					"id": "text--mainsub-heading",
+					"name": "Mainsub Heading Section",
+					"type": "text"
+				},
+				
+				
+				{
+					"id": "container--banner-wrapper",
+					"name": "Banner Section",
+					"type": "container"
+				},
+				{
+					"type": "image",
+					"id": "image--thanks_img",
+					"name": "Image Thanks",
+					"data": {
+						"max-width": 800
+					}
+				},{
+					"id": "text--thanks-heading",
+					"name": "Thanks Heading Section",
+					"type": "text"
+				},{
+					"id": "text--thanks-subheading",
+					"name": "Thanks SubHeading Section",
+					"type": "text"
+				},{
+					"id": "text--order-heading",
+					"name": "Order SubHeading Section",
+					"type": "text"
+				},{
+					"id": "container--blank-wrapper",
+					"name": "Blank Space Section",
+					"type": "container"
+				},
+				
+				{
+					"id": "container--order-summary-wrapper",
+					"name": "Order Summary Section",
+					"type": "container"
+				},{
+					"id": "text--order-id",
+					"name": "Order id Section",
+					"type": "text"
+				},{
+					"id": "text--order-date",
+					"name": "Order Date Section",
+					"type": "text"
+				},{
+					"id": "text--order-payment",
+					"name": "Order Payment Section",
+					"type": "text"
+				},{
+					"id": "text--order-product",
+					"name": "Order Product Section",
+					"type": "text"
+				},{
+					"id": "text--order-id-1",
+					"name": "Order id #1 Section",
+					"type": "text"
+				},{
+					"id": "text--order-date-1",
+					"name": "Order #1 Date Section",
+					"type": "text"
+				},{
+					"id": "text--order-payment-1",
+					"name": "Order Payment #1 Section",
+					"type": "text"
+				},{
+					"id": "text--order-product-1",
+					"name": "Order Product #1 Section",
+					"type": "text"
+				},{
+					"type": "container",
+					"id": "container--footer_links",
+					"name": "Footer Links"
+				},{
+					"type": "link",
+					"id": "link--footer_link_1",
+					"name": "#1 Footer Link"
+				},{
+					"type": "link",
+					"id": "link--footer_link_2",
+					"name": "#2 Footer Link"
+				},{
+					"type": "link",
+					"id": "link--footer_link_3",
+					"name": "#3 Footer Link"
+				},{
+					"id": "text--legal-text",
+					"name": "Legal Text",
+					"type": "text"
+				},{
+					"id": "text--legal-text",
+					"name": "Legal Text",
+					"type": "text"
+				}
+						
+			]			
+		}
+	} 	
+}		

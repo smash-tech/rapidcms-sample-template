@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <title>RapidCMS - Template Documentation</title>
+
+        <!-- Styles -->
+        <link href="assets/css/theDocs.all.min.css" rel="stylesheet">
+        <link href="assets/css/theDocs.css" rel="stylesheet">
+        <link href="assets/css/custom.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400' rel='stylesheet' type='text/css'>
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="icon" href="assets/img/favicon.ico">
+    </head>
+
+    <body data-spy="scroll" data-target=".sidebar" data-offset="200">
+
+
+        <!-- Sidebar -->
+        <aside class="sidebar sidebar-boxed sidebar-dark">
+            <div style=" width: 130px;margin:0 auto;">  
+                <a class="sidebar-brand" href="#" style=" margin-bottom:0px;">
+                    <img src="assets/img/rapidcms.png" alt="logo" style="float: left;width: 50px;"/>
+                    <div style="font-size: 20px;float: left;margin-top: 30px;color: white;"> apidcms</div>
+                    <div style="clear:both;"></div>
+                </a>
+            </div>
+            <ul class="nav sidenav dropable">
+                <li>
+                    <a href="#design">Design Recommendations</a>
+                    <ul>
+                        <li><a href="#whatKind">What kind of templates are popular?</a></li>
+                        <li><a href="#fileFolder">Files and Folder Structure</a></li>
+                        <li><a href="#templateFolder">Template Folder Structure</a></li>
+                        <li><a href="#assets">Assets\js\components </a></li>
+                    </ul>
+                </li>
+                <li><a href="#css">CSS Structure</a></li>
+                <li><a href="#metadata">Metadata / Instructions</a></li>
+                <li><a href="#available">Available Properties</a></li>
+                <li><a href="#styles">Styles</a></li>
+                <li><a href="#stylesProperties">Style Properties</a></li>
+                <li><a href="#elements">Elements</a></li>
+                <li><a href="#bestPractice">Best Practice</a></li>
+                <li><a href="#containers">Containers</a></li>
+                <li><a href="#text">Text</a></li>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#bImages">Background Images</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#textLink">Text Link</a></li>
+                <li><a href="#imageLink">Image Link</a></li>
+            </ul>
+
+        </aside>
+        <!-- END Sidebar -->
+
+
+        <header class="site-header navbar-transparent">
+
+            <!-- Top navbar & branding -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <!-- Toggle buttons and brand -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                            <span class="glyphicon glyphicon-option-vertical"></span>
+                        </button>
+
+                        <button type="button" class="navbar-toggle for-sidebar" data-toggle="offcanvas">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                    <!-- END Toggle buttons and brand -->
+
+                    <!-- Top navbar 
+                    <div id="navbar" class="navbar-collapse collapse" aria-expanded="true" role="banner">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Documentation</a></li>
+                        <li><a href="page_faq.html">FAQ</a></li>
+                        <li><a href="http://themeforest.net/item/thedocs-online-documentation-template/13070884/comments" target="_blank">Support</a></li>
+                        <li class="hero"><a href="http://themeforest.net/item/thedocs-online-documentation-template/13070884">Purchase</a></li>
+                      </ul>
+                    </div>
+                   END Top navbar -->
+
+                </div>
+            </nav>
+            <!-- END Top navbar & branding -->
+
+            <!-- Banner -->
+            <div class="banner auto-size" style="background-color: #5cc7b2">
+                <div class="container-fluid text-white">
+                    <h1><strong>RapidCMS Template </strong> documentation</h1>
+                    <h5>The quickest way to get started is to grab a copy of the RapidCMS Template Starter Kit. The sample template will give you a better idea of how to take advantage of the information presented in this documentation.</h5>
+                </div>
+            </div>
+            <!-- END Banner -->
+
+        </header>
+
+        <main class="container-fluid">
+
+            <!-- Main content -->
+            <article class="main-content" role="main">
+
+                <!--                <p class="lead">Maybe you want to have a single page documentation and use sidebar navigation for navigating inside the page. So this sample layouts are for you. Even maybe you'd like to use top navigation bar for navigating between your pages.</p>-->
+
+                <section>
+                    <h2 id="design">Design Recommendations</h2>
+                    <p>Recently, there were a few templates that unfortunately, we had to deny due to bad design. 
+                        <br/><br/>
+                        You’re probably wondering, “What’s considered good design??”. “Good/Bad” are very subjective terms, but there are some elements that we look/don’t look for. In general, we want to promote high quality templates on RapidCMS.com
+                        <br/><br/>  
+                        When we approach template reviews, we are operating from the standpoint of RapidCMS and potential RapidCMS customers who may purchase your template in our template marketplace. Through customer interviews, thousands of customer comments, and thousands of template reviews, we’ve discovered that how a template is perceived is based on how flexible / dynamic / customizable it is. 
+                    </p>
+                    <h3 id="whatKind">
+                        What kind of templates are popular?
+                    </h3>
+                    <p>
+                        Check out our Marketplace Template Ideas to see what our customers would like. Or if you prefer to freelance, check out our Jobs Board.
+                    </p>
+                    <h3 id="fileFolder">
+                        Files and Folder Structure
+                    </h3>
+                    <p>
+                        The files and folder structure of a RapidCMS template is relatively simple. There are a few gotchas and best-practices worth noting but fundamentally a template is comprised of HTML, CSS, Javascript, and some media assets, along with a mapping layer from your template to the RapidCMS Website Builder
+                    </p>
+                    <h3 id="templateFolder">
+                        Template Folder Structure
+                    </h3>
+                    <div class="file-tree">
+
+                        <ul>
+                            <li class="is-folder open">
+                                rapidcms-template
+                                <ul>
+                                    <li class="is-folder open">
+                                        css
+                                        <ul>
+                                            <li class="is-file">style.css<i>Write your custom styles in this file</i></li>
+                                            <li class="is-file">style-color1.css<i>Skin styles</i></li>
+                                            <li class="is-file">style-color1.css<i>Other Styles for your requirements</i></li>
+                                            <li class="is-file">style-color2.css<i>Other Styles for your requirements</i></li>
+                                            <li class="is-file">style-color3.css<i>Other Styles for your requirements</i></li>
+                                        </ul>
+                                    </li>
+                                    <li class="is-folder open">fonts<i>(Optional) Recommended google fonts</i>
+                                        <ul>
+                                            <li class="is-file">font.eof</li>
+                                            <li class="is-file">font.woff</li>
+                                            <li class="is-file">font.ttf</li>
+                                        </ul>
+                                    </li>
+                                    <li class="is-folder open">images<i>(default images) page preview (Lander, Checkout, Thank You)</i>
+                                        <ul>
+                                            <li class="is-file">image1.jpg</li>
+                                            <li class="is-file">image2.png</li>
+                                            <li class="is-file">image3.gif</li>
+                                            <li class="is-file">...</li>
+                                        </ul>
+                                    </li>
+                                    <li class="is-file">index.html</li>
+                                    <li class="is-file">checkout.html</li>
+                                    <li class="is-file">thankyou.html</li>
+                                    <li class="is-folder open">
+                                        js
+                                        <ul>
+                                            <li class="is-file">html5shiv.js</li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="is-folder open">meta
+                                        <ul class="is-file">
+                                            template.json
+                                        </ul></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <h4>
+                        Template Folder Structure Description
+                    </h4>
+
+                    <p >rapidcms-template <span class="label label-danger">Required</span></p> 
+                    <p> Every template must have a rapidcms-template folder at its root.</p>
+                    <br/>
+                    <p >css <span class="label label-danger">Required</span></p> 
+                    <p> style.css must be saved locally and included with the template inside the css folder.
+                        style-color1.css - style-color2.css - style-color3.css - style-color4.css - style-color5.css
+                        (colors are needed to change overall color pattern) </p>
+                    <br/>
+                    <p >fonts <span class="label label-primary"> Optional</span></p>
+                    <p> We recommend saving and including any local fonts using a fonts folder.
+                        <br/>Google Fonts - is recommended for all fonts</p>
+                    <br/>
+                    <p >images <span class="label label-primary"> Optional</span></p>
+                    <p> Important Images included in the images/ directory that are not used within the template will cause errors when the template is uploaded.
+                    </p>
+                    <br/>
+                    <p >images <span class="label label-purple">Best Practice</span></p>
+                    <p>Use web-optimized images. A tool like Smush.it can be quite handy. Also recommend putting them in an img folder.
+                    </p>
+                    <br/>
+                    <p >js <span class="label label-danger">Required</span></p>
+                    <p> All scripts are Required to be inside the js folder. <br/>
+                        Important HTML5Shiv must be included and linked within index.html.
+                    </p>
+                    <br/>
+                    <p >js <span class="label label-purple"> Best Practice</span></p>
+                    <p> Put common or custom Javascript code in a single file in the js/ directory (i.e. js/functions.js).
+                    </p> 
+                    <br/>
+                    <p >meta <span class="label label-danger">Required</span></p>
+                    <p>The meta/ directory must exist and contain template.json and the form object needs to be within template.json or the template will fail to upload.
+                    </p>
+                    <br/>
+                    <p >meta/template.json <span class="label label-danger"> Required</span></p>
+                    <p> The style object needs to be defined in meta/template.json, otherwise you’ll see a validation error
+                    </p>
+                    <br/>
+                    <p >index.html <span class="label label-danger">Required</span></p>
+                    <code>meta charset="utf-8"</code> must exist in the <code>head</code> of index.html
+                    <br/>
+                    <br/>
+                    <p >checkout.html <span class="label label-danger">Required</span></p>
+                    <br/>
+                    <p >thankyou.html<span class="label label-danger"> Required</span></p>
+                    <br/><div class="alert alert-danger" role="alert"> <strong>Important note:</strong> <br/>
+                        Currently, your <code>script</code> tags must be located within your <code>head</code> tag.</div>
+
+
+
+                    <h3 id="assets">
+
+                        Assets\js\components 
+
+                    </h3>
+                    <p>
+
+                        A folder with the global  js files that use in the templates <br/>
+                        For example :
+                        <br/><br/>
+                        Datepicker.js<br/>
+                        Validator.js<br/>
+                        Customcheckboxes.js<br/>
+                        Featherlight.js <br/>
+
+                    </p>
+                 
+                </section>
+
+
+                <section>
+                    <h2 id="css">CSS Structure</h2>
+                    <p>I recommend putting in a preliminary table of contents so that other developers have an idea of the structure of the document and the different sections for styles.
+                        <br/><br/>Many of these will be repeated across the templates but all the templet will have custom styles
+                        <br/><br/>  Table of Contents
+                        <br/>- Link Styles
+                        <br/>- Other sitewide styles
+                        <br/>- Actions
+                        <br/>- Layout
+                        <br/>- LOGO
+                        <br/>- TOP NAV
+                        <br/>- NAVBAR
+                        <br/>- SUBNAV
+
+                    </p>
+
+                    <!--                    <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="promo">
+                                                    <img class="bordered" src="assets/img/layout-single1.png" alt="sample1">
+                                                    <h3>Default</h3>
+                                                    <a class="btn btn-teal" href="layout_single-page-1.html">Demo</a>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-md-4">
+                                                <div class="promo">
+                                                    <img class="bordered" src="assets/img/layout-single2.png" alt="sample2">
+                                                    <h3>Side line</h3>
+                                                    <a class="btn btn-teal" href="layout_single-page-2.html">Demo</a>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-md-4">
+                                                <div class="promo">
+                                                    <img class="bordered" src="assets/img/layout-single3.png" alt="sample3">
+                                                    <h3>Boxed sidebar</h3>
+                                                    <a class="btn btn-teal" href="layout_single-page-3.html">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>-->
+
+                </section>
+
+
+                <section>
+                    <h2 id="metadata">Metadata / Instructions</h2>
+                    <p>The template.json defines the types of elements users will interact with, such as a container, an image, text, editable images and text etc… But before we explain how it works, please see the <span  class="btn btn-outline btn-xs btn-warning"><a href="#extremelyImportant"> Extremely Important!!!</a></span> note below:</p>
+
+                    <h3 id="extremelyImportant">Extremely Important!!!</h3>
+                    <p >meta/template.json </p>
+                    <p>
+                        This is so important, we are going to say it a couple of times. And we’re going to do it before we even tell you what element ID’s or our template.json are. AND we’re going to include this animated gif to show you what might happen if you change element data-lead-id in your html or the id within your template.json file: <a href="http://docs.rapidcms.com/images/template.json" target="_blank">Click here to download JSON file </a>
+                    </p><br/><br/>
+                    <p>editingIDs.gif</p>
+                    <p>
+                        When RapidCMS.com customers buy your template, and edit it within our RapidCMS Website Builder, the changes they make are based on the ID’s you define in the template.json file. If you change those ID’s, you will break the mapping from their published page to your template. Highly recommend you read our <a href="#bestPractice"> best practices </a> for IDs.
+                    </p><br/>
+                    <div class="alert alert-danger" role="alert">
+                        <strong> To sum it all up:</strong>
+                        <br/>
+                        NEVER change <code>data-lead-id="container-1"</code> to <code>data-lead-id="container-1a"</code> This will break pages using your template.
+                    </div>
+                    <p>
+                        After reviewing the notes above carefully, please toggle to the json tab to view the template.json file.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 id="available">Available Properties</h2>
+                    <p >id <span class="label label-danger">Required</span></p> 
+
+                    <p>A unique identifier for the template.<br/>
+                        Example(s): “123456”, “LP-1234”, “zBxVL”, etc.
+                    </p>
+                    <br/>
+                    <p>name <span class="label label-danger"> Required</span></p>
+                    <p>
+                        The name of the template. This can be changed within the RapidCMS interface, if needed.<br/>
+                        An elements name attribute cannot be the same as its id attribute<br/>
+                        Example(s): “Video Squeeze Page”, Facebook Promo Page", etc.
+                    </p> 
+                    <br/>
+                    <p> mobile <span class="label label-danger"> Required</span>
+                    <p>Is the template mobile responsive?<br/>
+                        Example(s): true, false (default)
+                    </p>
+                    <br/>
+                    <p>notes <span class="label label-danger"> Required</span></p>
+                    <p>
+                        A brief description of the template or a comment concerning any changes (for updates).<br/>
+                        Example(s): “Initial creation!”
+                    </p> 
+                    <br/>
+                    <p>syntax <span class="label label-danger">Required</span></p>
+                    <p>
+                        The syntax for the template. Currently the system only accepts a syntax value of 4.<br/>
+                        Example(s): 4
+                    </p> 
+                    <br/>
+                    <p>version <span class="label label-danger">Required</span></p>
+                    <p>
+                        The current version number of the template. Each subsequent update to a template must increment the version number in order to upload properly.<br/>
+                        Example(s): 1.0, 2.19
+                    </p> 
+                    <br/>
+                    <p>form <span class="label label-danger">Required</span></p>
+                    <p>
+                        An array of objects that customize the LeadBox™ appearances. As of syntax 4.0, the form object replaces the /meta/form.html method to customize the LeadBox™. If you still have form.html, you’ll see a Deprecated form.html warning.
+                        <br/>
+                        Example(s): See Deprecated form.html.
+                    </p>
+                    <br/>
+                    <p>elements <span class="label label-danger">Required</span></p>
+                    <p>
+                        An array of objects that informs the RapidCMS editor of elements that are editable. Requires at least one object to upload warningfully.<br/>
+                        Example(s): See each element for more information on the available object properties.
+                    </p>
+                    <br/>
+                    <p>style <span class="label label-danger">Required</span></p>
+                    <p>
+                        An object containing an array of replacement objects (read: instructions).<br/>
+                        Example(s): See the styles section for more information on the available properties of a replacement object.
+                    </p>
+                    <br/>
+                    <p>variables <span class="label label-primary">Optional</span></p>
+                    <p>
+                        An object that connects- an element with configuration data and any Javascript methods that might utilize the RapidCMS_input_data object.<br/>
+                        Example(s): See the Facebook Share Button for an example.
+                    </p>
+                    <br/>
+                    <p>migrate <span class="label label-primary">Optional</span></p>
+                    <p>
+                        An object that defines mapping between old element ID’s & new element ID’s. This ensures that any changes made to element ID’s will remain backwards compatible with previous versions. <br/>
+                        Example(s): See the Migrating Element IDs for further detail.
+                    </p>
+
+                    <br/>
+                    <div class="alert alert-danger" role="alert"> <strong>Deprecated form.html</strong>
+                        <br/> Coming soon<br/>
+                        this will explain how forms work on all 2 pages, index.html and checkout.html
+                        Can we style forms in 1 page? should form styles be the same?
+
+
+                    </div>
+                </section>
+                <section>
+                    <h2 id="styles">Styles</h2>
+                    <p>
+                        A breakdown of the tools available for color customizations (styles). The “style” property within meta/template.json currently supports only one property - “replacements”. The “replacements” property expects an array of objects.
+                        <br/><br/>
+                        You use the replacements array to define the colors that are editable within your template. Generally speaking, you should expose each of the colors you define. Currently, the page builder does a global find / replace within your stylesheet. Often times, template authors will just define a color palette for their template (primary, secondary, accent, light, dark, gray). This results in fewer colors that can be edited, but provides consistent theming throughout the template. Other times, authors will define colors based on specific elements (header background, header text, section 1 background, etc). In this case, if you want to expose multiple replacements for the color white, for example, you’ll have to create slightly different variants (shades), as seen in the json to the right.
+                    </p>
+
+                </section>
+                <section>
+                    <h2 id="stylesProperties">Styles Properties</h2>
+                    <p>type <span class="label label-primary">Required</span></p>
+                    <p> The type of style component to render in the editor.<br/>
+                        Example(s): “Color”.
+                    </p>
+                    <br/>
+                    <p>name <span class="label label-primary">Required</span></p>
+                    <p>
+                        The label of the style to change under the “Styles” section of the editor.<br/>
+                        Example(s): “Background Color”, “Main Font Color”, “Link Color”.
+                    </p>
+                    <br/>
+                    <p>find <span class="label label-primary">Required</span></p>
+                    <p>
+                        The value to “find” and subsequently replace. Note, because this operation is a find/replace, using a common color in css/style.css for many items will result in a larger-than-expected replacement.<br/>
+                        Example(s): Setting “find” to “#CCCCCC” will change anything using that color, regardless of the cosmetic intent. It’s strongly recommended to use slight variations for more granular control (i.e. “#CCCCCD”, “#CCCCCB”, etc.)
+                    </p>
+
+
+
+
+                </section>
+                <section>
+                    <h2 id="elements">Elements</h2>
+                    <p>
+                        Containers are elements within a template that can be hidden. Technically speaking any element in a template that can be edited, can be hidden or deleted by RapidCMS customers. The “container” type meta/template.json is for elements that only need this feature.</p>
+
+                </section>
+                <section>
+                    <h2 id="bestPractice">Best Practice</h2>
+                    <p>
+                        The "name" needs to be different than the "id". In another word, DO NOT do this: "id": 'button1', "name": 'button1'. Otherwise you’d be wondering why certain elements are not editable and may lose a few hairs in the process.</p>
+
+                </section>
+                <section>
+                    <h2 id="containers">Containers</h2>
+                    <p>Containers are elements that … well, contain other elements :) You can use a container by giving it the “container” type in meta/template.json
+                    <div class="code-window">
+                    <pre class="line-numbers">
+<code class="language-markup">
+&lt;div data-lead-id=&quot;ex01-container&quot; class=&quot;well&quot;&gt;         
+    ...
+&lt;/div&gt;
+</code>
+                    </pre>
+                    </div>
+                </section>
+                <section>
+                    <h2 id="text">Text</h2>
+                    <p>The “text” type meta/template.json designates the enclosed text as editable. A limited number of formatting options are available for the enclosed text (i.e. bold, italic, underlined, foreground and background colors, links, and the font.)</p>
+                  <div class="code-window">
+                    <pre class="line-numbers">
+<code class="language-markup">
+&lt;p data-lead-id=&quot;s01-lead&quot; &gt;         
+    ...
+&lt;/p&gt;
+</code>
+                    </pre>
+                  </div>
+                </section>
+                <section>
+                    <h2 id="images">Images</h2>
+                    <p>The image type in meta/template.json designates an image as swappable. Setting the max-width property will constrain the image dimensions, so use this with caution. That behavior is best handled in the stylesheets.
+                    </p>
+                     <div class="code-window">
+                    <pre class="line-numbers">
+<code class="language-markup">
+    &lt;img src=&quot;img/340x120.png&quot; data-lead-id=&quot;ex03-image&quot; alt=&quot;&quot; class=&quot;thumbnail&quot;&gt;         
+</code>
+                    </pre></div>
+                </section>
+                <section>
+                    <h2 id="bImages">Background Images</h2>
+                    <p>
+                        The background-image in meta/template.json designates an image as swappable. The only difference between background-image & image types is that a background-image will remove the editable hover-over in the RapidCMS page builder. See more tips below.
+
+                    </p>
+                     <div class="code-window">
+                    <pre class="line-numbers">
+<code class="language-markup">
+    &lt;img src=&quot;img/340x120.png&quot; data-lead-id=&quot;background-image&quot; alt=&quot;&quot; class=&quot;thumbnail&quot;&gt;         
+</code>
+                    </pre>
+                     </div>
+                </section>
+                <section>
+                    <h2 id="videos">Videos</h2>
+                    <p>The “video” type meta/template.json specifies a container within which the editor can embed a video. The editor will insert a placeholder during editing but including a mock image will help during the editing phase, prior to upload.</p>
+                    <p>The only difference between the video element and the embed element is that the video element will handle responsive video for you.</p>
+                    <div class="code-window">
+                    <pre class="line-numbers">
+<code class="language-markup">
+&lt;div  data-lead-id=&quot;ex05-video&quot;&gt; 
+    &lt;img src=&quot;img/videoPlaceholder.png&quot; /&gt;
+&lt;/div&gt; 
+</code>
+                    </pre>
+                    </div>
+                </section>
+                <section>
+                    <h2 id="textLink">Text Link</h2>
+                    <p>The “link” type meta/template.json designates a hyperlink that can be edited. The “text” type should be used when links are amongst a larger body of text.</p>
+                   <div class="code-window">
+                    <pre class="line-numbers">
+<code class="language-markup">
+&lt;a href=&quot;http://example.com/RapidCMS&quot;  data-lead-id=&quot;ex06-image-link&quot;&gt; 
+   Example
+&lt;/a&gt;
+</code>
+                    </pre>
+                   </div>
+                </section>
+                <section>
+                    <h2 id="imageLink">Image Link</h2>
+                    <p>The “image-link” type meta/template.json is a mash-up of the “image” and the “link” types. It allows image swapping and assigning a destination URL.</p>
+                   <div class="code-window">
+                    <pre class="line-numbers">
+<code class="language-markup">
+&lt;a href=&quot;http://example.com/RapidCMS&quot;  data-lead-id=&quot;ex06-image-link&quot;&gt; 
+    &lt;img src=&quot;img/340x120.png&quot; alt=&quot; &quot;/&gt;
+&lt;/a&gt; 
+</code>
+                    </pre>
+                   </div>
+                </section>
+            </article>
+            <!-- END Main content -->
+        </main>
+
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container-fluid">
+                <a id="scroll-up" href="#"><i class="fa fa-angle-up"></i></a>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <p>Copyright &copy; 2015. All right reserved</p>
+                    </div>
+                    <!--                    <div class="col-md-6 col-sm-6">
+                                            <ul class="footer-menu">
+                                                <li><a href="page_changelog.html">Changelog</a></li>
+                                                <li><a href="page_credits.html">Credits</a></li>
+                                                <li><a href="mailto:support@shamsoft.net">Contact us</a></li>
+                                            </ul>
+                                        </div>-->
+                </div>
+            </div>
+        </footer>
+        <!-- END Footer -->
+
+        <!-- Scripts -->
+        <script src="assets/js/theDocs.all.min.js"></script>
+        <script src="assets/js/theDocs.js"></script>
+        <script src="assets/js/custom.js"></script>
+
+    </body>
+</html>
