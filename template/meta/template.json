@@ -1,467 +1,549 @@
  {
-    "id": "RC-TMPL-01",
-    "name": "Rapidcms Checkout",
-    "mobile": true,
-    "notes": "Initial Release 1.0",
-    "syntax": 4,
-    "version": 1.0,
-	"color_variations":{
-		variation_1:{
-			"hex","#DDCCDD",
-			"thumb_main" :"red_thumb_main.jpg",
-			"thumb_checkout" :"red_thumb_checkout.jpg",
-			"thumb_cart" :"red_thumb_cart.jpg",
-		},
-		variation_2:{
-			"hex","#FF44FF",
-			"thumb_main" :"blue_thumb_main.jpg",
-			"thumb_checkout" :"blue_thumb_checkout.jpg",
-			"thumb_cart" :"blur_thumb_cart.jpg",
-		},
-		variation_3:{
-			"hex","#FF3E3E",
-			"thumb_main" :"teal_thumb_main.jpg",
-			"thumb_checkout" :"teal_thumb_checkout.jpg",
-			"thumb_cart" :"teal_thumb_cart.jpg",
-		},
-		variation_4:{
-			"hex","#A2B3C4",
-			"thumb_main" :"gold_thumb_main.jpg",
-			"thumb_checkout" :"gold_thumb_checkout.jpg",
-			"thumb_cart" :"gold_thumb_cart.jpg",
-		},
-		variation_5	:{
-			"hex","#F4A4A2",
-			"thumb_main" :"brown_thumb_main.jpg",
-			"thumb_checkout" :"brown_thumb_checkout.jpg",
-			"thumb_cart" :"brown_thumb_cart.jpg",
-		},
-		
-	},
-	pages:{
-		checkout:{
-				 "form": {
-				"title": {
-					"css": {
-						"font-family": "Helvetica, Arial, sans-serif",
-						"font-size": "18pt;",
-						"letter-spacing": "0em;"
-					},
-					"html": "<strong>Enter your email address below to reserve _______... it's 100% FREE!</strong>"
-				},
-				"submit": {
-					"css": {
-						"background-color": "#ffcb01;",
-						"border-color": "#ffb403;",
-						"border-width": "0pt;",
-						"border-style": "solid;",
-						"font-family": "Helvetica, Arial, sans-serif",
-						"font-size": "14pt;",
-						"letter-spacing": "-0.1em;"
-					},
-					"html": "Free Instant Access &raquo;"
-				},
-				"privacy": {
-					"css": {
-						"font-family": "Helvetica, Arial, sans-serif",
-						"font-size": "12pt;",
-						"letter-spacing": "-0.1em;"
-					},
-					"html": "<div><i class=\"icon-lock\"></i>We hate SPAM and promise to keep your email address safe. </div>"
-				}
-			},
-		   
-			"elements": [
-				{
-					"id": "container--header-wrapper",
-					"name": "Main Heading Section",
-					"type": "container"
-				},{
-					"id": "text--main-heading",
-					"name": "Main Heading Section",
-					"type": "text"
-				},{
-					"id": "text--mainsub-heading",
-					"name": "Mainsub Heading Section",
-					"type": "text"
-				},{
-					"id": "text--main-subheading",
-					"name": "Main SubHeading Section",
-					"type": "text"
-				},{
-					"id": "container--banner-wrapper",
-					"name": "Banner Section",
-					"type": "container"
-				},{
-					"type": "image",
-					"id": "image--product_img",
-					"name": "Image Product",
-					"data": {
-						"max-width": 800
-					}
-				},{
-					"id": "text--banner-review-order",
-					"name": "Banner Review Order Section",
-					"type": "text"
-				},{
-					"id": "text--banner-subtitle",
-					"name": "Banner Heading Section",
-					"type": "text"
-				},{
-					"id": "container--description-wrapper",
-					"name": "description Section",
-					"type": "container"
-				},{
-					"id": "text--description-heading",
-					"name": "description Heading Section",
-					"type": "text"
-				},{
-					"id": "text--description-paragraph",
-					"name": "description Heading paragraph",
-					"type": "text"
-				},{
-					"type": "image",
-					"id": "image--descrpition-picture",
-					"name": "Image Descrpition",
-					"data": {
-						"max-width": 200
-					}
-				},{
-					"id": "container--blank-wrapper",
-					"name": "Blank Section",
-					"type": "container"
-				},{
-					"type": "container",
-					"id": "container--footer_links",
-					"name": "Footer Links"
-				},{
-					"type": "link",
-					"id": "link--footer_link_1",
-					"name": "#1 Footer Link"
-				},{
-					"type": "link",
-					"id": "link--footer_link_2",
-					"name": "#2 Footer Link"
-				},
-				{
-					"type": "link",
-					"id": "link--footer_link_3",
-					"name": "#3 Footer Link"
-				},{
-					"id": "text--legal-text",
-					"name": "Legal Text",
-					"type": "text"
-				},{
-					"id": "text--legal-text",
-					"name": "Legal Text",
-					"type": "text"
-				},{
-					"id": "text--banner-legal-text",
-					"name": "Banner Legal Text",
-					"type": "text"
-				},{
-					"id": "text--address-text",
-					"name": "Address Text",
-					"type": "text"
-				}
-				
-			]
-		},
-		index:{
-			"form": {
-					"title": {
-						"css": {
-							"font-family": "Helvetica, Arial, sans-serif",
-							"font-size": "18pt;",
-							"letter-spacing": "0em;"
-						},
-						"html": "<strong>Enter your email address below to reserve _______... it's 100% FREE!</strong>"
-					},
-					"submit": {
-						"css": {
-							"background-color": "#ffcb01;",
-							"border-color": "#ffb403;",
-							"border-width": "0pt;",
-							"border-style": "solid;",
-							"font-family": "Helvetica, Arial, sans-serif",
-							"font-size": "14pt;",
-							"letter-spacing": "-0.1em;"
-						},
-						"html": "Free Instant Access &raquo;"
-					},
-					"privacy": {
-						"css": {
-							"font-family": "Helvetica, Arial, sans-serif",
-							"font-size": "12pt;",
-							"letter-spacing": "-0.1em;"
-						},
-						"html": "<div><i class=\"icon-lock\"></i>We hate SPAM and promise to keep your email address safe. </div>"
-					}
-				},
-			   
-				"elements": [
-					{
-						"id": "container--header-wrapper",
-						"name": "Main Heading Section",
-						"type": "container"
-					},{
-						"id": "text--main-heading",
-						"name": "Main Heading Section",
-						"type": "text"
-					},{
-						"id": "text--main-subheading",
-						"name": "Main SubHeading Section",
-						"type": "text"
-					},{
-						"id": "text--feature-1",
-						"name": "Feature #1",
-						"type": "text"
-					},{
-						"id": "text--feature-2",
-						"name": "Feature #2",
-						"type": "text"
-					},{
-						"id": "text--feature-3",
-						"name": "Feature #3",
-						"type": "text"
-					},{
-						"id": "text--feature-4",
-						"name": "Feature #4",
-						"type": "text"
-					},{
-						"id": "text--right-heading",
-						"name": "Main Right SubHeading Section",
-						"type": "text"
-					},{
-						"id": "container--banner-wrapper",
-						"name": "Banner Section",
-						"type": "container"
-					},
-					{
-						"type": "image",
-						"id": "image--product_img",
-						"name": "Image Product",
-						"data": {
-							"max-width": 800
-						}
-					},{
-						"type": "image",
-						"id": "image--banner_img",
-						"name": "Image Banner",
-						"data": {
-							"max-width": 800
-						},
-					},{
-						"id": "text--banner-title",
-						"name": "Banner Heading Section",
-						"type": "text"
-					},{
-						"id": "text--banner-subtitle",
-						"name": "Banner Heading Section",
-						"type": "text"
-					},{
-						"id": "container--description-wrapper",
-						"name": "description Section",
-						"type": "container"
-					},{
-						"id": "text--description-heading",
-						"name": "description Heading Section",
-						"type": "text"
-					},{
-						"id": "text--description-paragraph",
-						"name": "description Heading paragraph",
-						"type": "text"
-					},{
-						"type": "image",
-						"id": "image--descrpition-picture",
-						"name": "Image Descrpition",
-						"data": {
-							"max-width": 200
-						}
-					},{
-						"id": "container--blank-wrapper",
-						"name": "Blank Section",
-						"type": "container"
-					},{
-						"type": "container",
-						"id": "container--footer_links",
-						"name": "Footer Links"
-					},{
-						"type": "link",
-						"id": "link--footer_link_1",
-						"name": "#1 Footer Link"
-					},
-					{
-						"type": "link",
-						"id": "link--footer_link_2",
-						"name": "#2 Footer Link"
-					},
-					{
-						"type": "link",
-						"id": "link--footer_link_3",
-						"name": "#3 Footer Link"
-					},{
-						"id": "text--legal-text",
-						"name": "Legal Text",
-						"type": "text"
-					},{
-						"id": "text--legal-text",
-						"name": "Legal Text",
-						"type": "text"
-					},
-					{
-						"id": "text--address-text",
-						"name": "Address Text",
-						"type": "text"
-					}
-					
-				]			
-		},
-		thanks:{
-			  "form": {
-				"title": {
-					"css": {
-						"font-family": "Helvetica, Arial, sans-serif",
-						"font-size": "18pt;",
-						"letter-spacing": "0em;"
-					},
-					"html": "<strong>Enter your email address below to reserve _______... it's 100% FREE!</strong>"
-				},
-				"submit": {
-					"css": {
-						"background-color": "#ffcb01;",
-						"border-color": "#ffb403;",
-						"border-width": "0pt;",
-						"border-style": "solid;",
-						"font-family": "Helvetica, Arial, sans-serif",
-						"font-size": "14pt;",
-						"letter-spacing": "-0.1em;"
-					},
-					"html": "Free Instant Access &raquo;"
-				},
-				"privacy": {
-					"css": {
-						"font-family": "Helvetica, Arial, sans-serif",
-						"font-size": "12pt;",
-						"letter-spacing": "-0.1em;"
-					},
-					"html": "<div><i class=\"icon-lock\"></i>We hate SPAM and promise to keep your email address safe. </div>"
-				}
-			},
-		   
-			"elements": [
-				{
-					"id": "container--header-wrapper",
-					"name": "Main Heading Section",
-					"type": "container"
-				},{
-					"id": "text--main-heading",
-					"name": "Main Heading Section",
-					"type": "text"
-				},{
-					"id": "text--main-subheading",
-					"name": "Main SubHeading Section",
-					"type": "text"
-				},{
-					"id": "text--mainsub-heading",
-					"name": "Mainsub Heading Section",
-					"type": "text"
-				},
-				
-				
-				{
-					"id": "container--banner-wrapper",
-					"name": "Banner Section",
-					"type": "container"
-				},
-				{
-					"type": "image",
-					"id": "image--thanks_img",
-					"name": "Image Thanks",
-					"data": {
-						"max-width": 800
-					}
-				},{
-					"id": "text--thanks-heading",
-					"name": "Thanks Heading Section",
-					"type": "text"
-				},{
-					"id": "text--thanks-subheading",
-					"name": "Thanks SubHeading Section",
-					"type": "text"
-				},{
-					"id": "text--order-heading",
-					"name": "Order SubHeading Section",
-					"type": "text"
-				},{
-					"id": "container--blank-wrapper",
-					"name": "Blank Space Section",
-					"type": "container"
-				},
-				
-				{
-					"id": "container--order-summary-wrapper",
-					"name": "Order Summary Section",
-					"type": "container"
-				},{
-					"id": "text--order-id",
-					"name": "Order id Section",
-					"type": "text"
-				},{
-					"id": "text--order-date",
-					"name": "Order Date Section",
-					"type": "text"
-				},{
-					"id": "text--order-payment",
-					"name": "Order Payment Section",
-					"type": "text"
-				},{
-					"id": "text--order-product",
-					"name": "Order Product Section",
-					"type": "text"
-				},{
-					"id": "text--order-id-1",
-					"name": "Order id #1 Section",
-					"type": "text"
-				},{
-					"id": "text--order-date-1",
-					"name": "Order #1 Date Section",
-					"type": "text"
-				},{
-					"id": "text--order-payment-1",
-					"name": "Order Payment #1 Section",
-					"type": "text"
-				},{
-					"id": "text--order-product-1",
-					"name": "Order Product #1 Section",
-					"type": "text"
-				},{
-					"type": "container",
-					"id": "container--footer_links",
-					"name": "Footer Links"
-				},{
-					"type": "link",
-					"id": "link--footer_link_1",
-					"name": "#1 Footer Link"
-				},{
-					"type": "link",
-					"id": "link--footer_link_2",
-					"name": "#2 Footer Link"
-				},{
-					"type": "link",
-					"id": "link--footer_link_3",
-					"name": "#3 Footer Link"
-				},{
-					"id": "text--legal-text",
-					"name": "Legal Text",
-					"type": "text"
-				},{
-					"id": "text--legal-text",
-					"name": "Legal Text",
-					"type": "text"
-				}
-						
-			]			
-		}
-	} 	
-}		
+ 	"id": "RC-TMPL-01",
+ 	"name": "Rapidcms Checkout",
+ 	"mobile": true,
+ 	"notes": "Initial Release 1.0",
+ 	"syntax": "4",
+ 	"version": "1.0",
+ 	"color_variations": {
+ 		"variation_1": {
+ 			"hex": "#DDCCDD",
+ 			"thumb_main": "red_thumb_main.jpg",
+ 			"thumb_checkout": "red_thumb_checkout.jpg",
+ 			"thumb_cart": "red_thumb_cart.jpg"
+ 		},
+ 		"variation_2": {
+ 			"hex": "#FF44FF",
+ 			"thumb_main": "blue_thumb_main.jpg",
+ 			"thumb_checkout": "blue_thumb_checkout.jpg",
+ 			"thumb_cart": "blur_thumb_cart.jpg"
+ 		},
+ 		"variation_3": {
+ 			"hex": "#FF3E3E",
+ 			"thumb_main": "teal_thumb_main.jpg",
+ 			"thumb_checkout": "teal_thumb_checkout.jpg",
+ 			"thumb_cart": "teal_thumb_cart.jpg"
+ 		},
+ 		"variation_4": {
+ 			"hex": "#A2B3C4",
+ 			"thumb_main": "gold_thumb_main.jpg",
+ 			"thumb_checkout": "gold_thumb_checkout.jpg",
+ 			"thumb_cart": "gold_thumb_cart.jpg"
+ 		},
+ 		"variation_5": {
+ 			"hex": "#F4A4A2",
+ 			"thumb_main": "brown_thumb_main.jpg",
+ 			"thumb_checkout": "brown_thumb_checkout.jpg",
+ 			"thumb_cart": "brown_thumb_cart.jpg"
+ 		}
+ 	},
+ 	"pages": {
+ 		"index": {
+ 			"form": {
+ 				"title": {
+ 					"html": "<strong>Enter your email address below to reserve _______... it's 100% FREE!</strong>"
+ 				},
+ 				"submit": {
+ 					"html": "Free Instant Access &raquo;"
+ 				},
+ 				"privacy": {
+ 					"html": "<div><i class=\"icon-lock\"></i>We hate SPAM and promise to keep your email address safe. </div>"
+ 				},
+ 				"form_elements": [{
+ 					"id": "form--first-name",
+ 					"name": "From First Name Section",
+ 					"type": "input"
+ 				}, {
+ 					"id": "form--last-name",
+ 					"name": "From Last Name Section",
+ 					"type": "input"
+ 				}, {
+ 					"id": "form--address",
+ 					"name": "From Address Section",
+ 					"type": "textarea"
+ 				}, {
+ 					"id": "form--city",
+ 					"name": "From City Section",
+ 					"type": "input"
+ 				}, {
+ 					"id": "form--zip",
+ 					"name": "From Zip Section",
+ 					"type": "input"
+ 				}, {
+ 					"id": "form--country",
+ 					"name": "From Country Section",
+ 					"type": "input"
+ 				}, {
+ 					"id": "form--state",
+ 					"name": "From State Section",
+ 					"type": "input"
+ 				}, {
+ 					"id": "form--email",
+ 					"name": "From Email Section",
+ 					"type": "input"
+ 				}, {
+ 					"id": "form--phone-number",
+ 					"name": "From Phone Number Section",
+ 					"type": "input"
+ 				}, {
+ 					"id": "form--terms",
+ 					"name": "From terms Section",
+ 					"type": "checkbox"
+ 				}, {
+ 					"id": "form--submit-button",
+ 					"name": "From Submit Section",
+ 					"type": "button"
+ 				}]
+ 			},
+
+ 			"elements": [{
+ 				"id": "container--header-wrapper",
+ 				"name": "Main Heading Section",
+ 				"type": "container"
+ 			}, {
+ 				"id": "text--main-heading",
+ 				"name": "Main Heading Section",
+ 				"type": "text",
+                "html": "WEIGHT LOSS FORMULA"
+ 			}, {
+ 				"id": "text--main-subheading",
+ 				"name": "Main SubHeading Section",
+ 				"type": "text",
+                "html": "Weight Loss Landing Page Design "
+ 			}, {
+ 				"id": "text--feature-1",
+ 				"name": "Feature #1",
+ 				"type": "text",
+                "html": "Metabolic profile"
+ 			}, {
+ 				"id": "text--feature-2",
+ 				"name": "Feature #2",
+ 				"type": "text",
+                "html": "Fat Burning Capacity"
+ 			}, {
+ 				"id": "text--feature-3",
+ 				"name": "Feature #3",
+ 				"type": "text",
+                "html": "Curb our cravings"
+ 			}, {
+ 				"id": "text--feature-4",
+ 				"name": "Feature #4",
+ 				"type": "text",
+                "html": "Look sexy again"
+ 			}, {
+ 				"id": "text--right-heading",
+ 				"name": "Main Right SubHeading Section",
+ 				"type": "text",
+                "html": "Everyrhing You Need To Kick Start Your Diet"
+ 			}, {
+ 				"id": "container--banner-wrapper",
+ 				"name": "Banner Section",
+ 				"type": "container"
+ 			}, {
+ 				"type": "image",
+ 				"id": "image--product_img",
+ 				"name": "Image Product",
+ 				"data": {
+ 					"max-width": 800
+ 				}
+ 			}, {
+ 				"type": "image",
+ 				"id": "image--banner_img",
+ 				"name": "Image Banner",
+ 				"data": {
+ 					"max-width": 800
+ 				}
+ 			}, {
+ 				"id": "text--banner-title",
+ 				"name": "Banner Heading Section",
+ 				"type": "text",
+                "html": "Weight Loss Formula"
+ 			}, {
+ 				"id": "text--banner-subtitle",
+ 				"name": "Banner Heading Section",
+ 				"type": "text",
+                "html": "LOSE UP TO 10 POUNDS IN 7 DAYS"
+ 			}, {
+ 				"id": "container--description-wrapper",
+ 				"name": "description Section",
+ 				"type": "container"
+ 			}, {
+ 				"id": "text--description-heading",
+ 				"name": "description Heading Section",
+ 				"type": "text",
+                "html": "THE BENEFITS OF GARCINIA CAMBOGIA (HCA)? "
+ 			}, {
+ 				"id": "text--description-paragraph",
+ 				"name": "description Heading paragraph",
+ 				"type": "text"
+ 			}, {
+ 				"type": "image",
+ 				"id": "image--description-picture",
+ 				"name": "Image Description",
+ 				"data": {
+ 					"max-width": 200
+ 				}
+ 			}, {
+ 				"id": "container--blank-wrapper",
+ 				"name": "Blank Section",
+ 				"type": "container"
+ 			}, {
+ 				"type": "container",
+ 				"id": "container--footer_links",
+ 				"name": "Footer Links"
+ 			}, {
+ 				"type": "link",
+ 				"id": "link--footer_link_1",
+ 				"name": "#1 Footer Link",
+                "short_code": "[FOOTER_LINK1]",
+                "html": "Terms & Conditions"
+ 			}, {
+ 				"type": "link",
+ 				"id": "link--footer_link_2",
+ 				"name": "#2 Footer Link",
+                "short_code": "[FOOTER_LINK2]",
+                "html": "Privacy policy"
+ 			}, {
+ 				"type": "link",
+ 				"id": "link--footer_link_3",
+ 				"name": "#3 Footer Link",
+                "short_code": "[FOOTER_LINK3]",
+                "html": "Contact Us"
+ 			}, {
+ 				"id": "text--legal-text",
+ 				"name": "Legal Text",
+ 				"type": "text",
+                "html": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.Read the entire label before use."
+ 			}, {
+ 				"id": "text--address-text",
+ 				"name": "Address Text",
+ 				"type": "text",
+                "html": "Simonton Nutrition, LLC | 6725 W Central Ave Suite M-105, Toledo, OH 43617 | 1-866-448-8201"
+ 			}]
+ 		},
+ 		"checkout": {
+ 			"form": {
+ 				"title": {
+                    "html": "&lt;strong&gt;COMPLETE ORDER FOR YOUR PACKAGE&lt;/strong&gt;"
+                },
+                "submit": {
+                    "html": "Submit"
+                },
+ 				"privacy": {
+ 					"html": "<div><i class=\"icon-lock\"></i>We hate SPAM and promise to keep your email address safe. </div>"
+ 				},
+ 				"form_elements": [{
+ 					"id": "form--credit-card",
+ 					"name": "From Credit Card Section",
+ 					"type": "input"
+ 				}, {
+                    "id": "form--expire-month",
+                    "name": "From Credit Card Month Expire Section",
+                    "type": "input"
+                }, {
+                    "id": "form--expire-year",
+                    "name": "From Credit Card Year Expire Section",
+                    "type": "input"
+                }, {
+                    "id": "form--expire-security",
+                    "name": "From Credit Card Security Code Section",
+                    "type": "input"
+                }, {
+                    "id": "form--expire-security",
+                    "name": "From Phone Section",
+                    "type": "input"
+                },{
+ 					"id": "form--terms",
+ 					"name": "From terms Section",
+ 					"type": "checkbox"
+ 				}]
+ 			},
+ 			"elements": [{
+ 				"id": "container--header-wrapper",
+ 				"name": "Main Heading Section",
+ 				"type": "container"
+ 			}, {
+ 				"id": "text--main-heading",
+ 				"name": "Main Heading Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--mainsub-heading",
+ 				"name": "Mainsub Heading Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--main-subheading",
+ 				"name": "Main SubHeading Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "container--banner-wrapper",
+ 				"name": "Banner Section",
+ 				"type": "container"
+ 			}, {
+ 				"type": "image",
+ 				"id": "image--product_img",
+ 				"name": "Image Product",
+ 				"data": {
+ 					"max-width": 800
+ 				}
+ 			}, {
+ 				"id": "container--banner-review-order",
+ 				"name": "Banner Review Order Section",
+ 				"type": "container"
+ 			}, {
+                            "id": "text--order-subtotal",
+                            "name": "Order Subtotal Section",
+                            "type": "text",
+                            "short_code":"[SUBTOTAL]"
+                        }, {
+                            "id": "text--order-shipping",
+                            "name": "Order Shipping Section",
+                            "type": "text",
+                            "short_code": "[SHIPPING]"
+                        }, {
+                            "id": "text--order-total",
+                            "name": "Order Total Section",
+                            "type": "text",
+                            "short_code": "[TOTAL]"
+                        }, {
+ 				"id": "text--banner-subtitle",
+ 				"name": "Banner Heading Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "container--description-wrapper",
+ 				"name": "description Section",
+ 				"type": "container"
+ 			}, {
+ 				"id": "text--description-heading",
+ 				"name": "description Heading Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--description-paragraph",
+ 				"name": "description Heading paragraph",
+ 				"type": "text"
+ 			}, {
+ 				"type": "image",
+ 				"id": "image--descrpition-picture",
+ 				"name": "Image Descrpition",
+ 				"data": {
+ 					"max-width": 200
+ 				}
+ 			}, {
+ 				"id": "container--blank-wrapper",
+ 				"name": "Blank Section",
+ 				"type": "container"
+ 			}, {
+ 				"type": "container",
+ 				"id": "container--footer_links",
+ 				"name": "Footer Links"
+ 			}, {
+ 				"type": "link",
+ 				"id": "link--footer_link_1",
+ 				"name": "#1 Footer Link"
+ 			}, {
+ 				"type": "link",
+ 				"id": "link--footer_link_2",
+ 				"name": "#2 Footer Link"
+ 			}, {
+ 				"type": "link",
+ 				"id": "link--footer_link_3",
+ 				"name": "#3 Footer Link"
+ 			}, {
+ 				"id": "text--legal-text",
+ 				"name": "Legal Text",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--legal-text",
+ 				"name": "Legal Text",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--banner-legal-text",
+ 				"name": "Banner Legal Text",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--address-text",
+ 				"name": "Address Text",
+ 				"type": "text"
+ 			}]
+ 		},
+ 		"thanks": {
+ 			"elements": [{
+ 				"id": "container--header-wrapper",
+ 				"name": "Main Heading Section",
+ 				"type": "container"
+ 			}, {
+ 				"id": "text--main-heading",
+ 				"name": "Main Heading Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--main-subheading",
+ 				"name": "Main SubHeading Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--mainsub-heading",
+ 				"name": "Mainsub Heading Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "container--banner-wrapper",
+ 				"name": "Banner Section",
+ 				"type": "container"
+ 			}, {
+ 				"type": "image",
+ 				"id": "image--thanks_img",
+ 				"name": "Image Thanks",
+ 				"data": {
+ 					"max-width": 800
+ 				}
+ 			}, {
+ 				"id": "text--thanks-heading",
+ 				"name": "Thanks Heading Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--thanks-subheading",
+ 				"name": "Thanks SubHeading Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--order-heading",
+ 				"name": "Order SubHeading Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "container--blank-wrapper",
+ 				"name": "Blank Space Section",
+ 				"type": "container"
+ 			}, {
+ 				"id": "container--order-summary-wrapper",
+ 				"name": "Order Summary Section",
+ 				"type": "container"
+ 			}, {
+ 				"id": "text--order-id",
+ 				"name": "Order id Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--order-date",
+ 				"name": "Order Date Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--order-payment",
+ 				"name": "Order Payment Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--order-product",
+ 				"name": "Order Product Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--order-id-1",
+ 				"name": "Order id #1 Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--order-date-1",
+ 				"name": "Order #1 Date Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--order-payment-1",
+ 				"name": "Order Payment #1 Section",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--order-product-1",
+ 				"name": "Order Product #1 Section",
+ 				"type": "text"
+ 			}, {
+ 				"type": "container",
+ 				"id": "container--footer_links",
+ 				"name": "Footer Links"
+ 			}, {
+ 				"type": "link",
+ 				"id": "link--footer_link_1",
+ 				"name": "#1 Footer Link"
+ 			}, {
+ 				"type": "link",
+ 				"id": "link--footer_link_2",
+ 				"name": "#2 Footer Link"
+ 			}, {
+ 				"type": "link",
+ 				"id": "link--footer_link_3",
+ 				"name": "#3 Footer Link"
+ 			}, {
+ 				"id": "text--legal-text",
+ 				"name": "Legal Text",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--legal-text",
+ 				"name": "Legal Text",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--headline-text",
+ 				"name": "Headline Text",
+ 				"type": "text"
+ 			}, {
+ 				"id": "text--description-text",
+ 				"name": "Description Text",
+ 				"type": "text"
+ 			}]
+ 		}
+ 	},
+ 	"editor_element": {
+ 		"elements": [{
+ 			"name": "Drag Image Section",
+ 			"type": "image",
+ 			"class": "editor-image"
+ 		}, {
+ 			"name": "Drag Paragraph Section",
+ 			"type": "text",
+ 			"class": "editor-text"
+ 		}, {
+ 			"name": "Drag Image Text Section",
+ 			"type": "text",
+ 			"class": "editor-text"
+ 		}, {
+ 			"name": "Drag Title Section",
+ 			"type": "text",
+ 			"class": "editor-text"
+ 		}, {
+ 			"name": "Drag File Upload Section",
+ 			"type": "file upload",
+ 			"class": "editor-file"
+ 		}, {
+ 			"name": "Drag Social Icon Section",
+ 			"type": "image",
+ 			"class": "editor-image"
+ 		}, {
+ 			"name": "Drag Google Map Section",
+ 			"type": "map",
+ 			"class": "editor-map"
+ 		}, {
+ 			"name": "Drag Youtube Section",
+ 			"type": "video",
+ 			"class": "editor-video"
+ 		}, {
+ 			"name": "Drag Divider Section",
+ 			"type": "divider",
+ 			"class": "editor-divider"
+ 		}, {
+ 			"name": "Drag Column Section",
+ 			"type": "row",
+ 			"class": "editor-row"
+ 		}, {
+ 			"name": "Drag Slider Section",
+ 			"type": "Slider",
+ 			"class": "editor-slider"
+ 		}, {
+ 			"name": "Drag Gallery Section",
+ 			"type": "images",
+ 			"class": "editor-image"
+ 		}, {
+ 			"name": "Drag Form Section",
+ 			"type": "form",
+ 			"class": "editor-form",
+ 			"form": {
+ 				"title": {
+ 					"class": "editor-form-title"
+ 				},
+ 				"submit": {
+ 					"class": "editor-form-submit"
+ 				},
+ 				"privacy": {
+ 					"class": "editor-privacy-submit"
+ 				}
+ 			}
+ 		}]
+ 	}
+ }
