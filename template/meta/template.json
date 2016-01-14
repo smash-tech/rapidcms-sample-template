@@ -1,6 +1,6 @@
  {
  	"id": "RC-TMPL-01",
- 	"name": "Rapidcms Checkout",
+ 	"name": "My Template",
  	"mobile": true,
  	"notes": "Initial Release 1.0",
  	"syntax": "4",
@@ -10,45 +10,50 @@
  			"hex": "#DDCCDD",
  			"thumb_main": "red_thumb_main.jpg",
  			"thumb_checkout": "red_thumb_checkout.jpg",
- 			"thumb_cart": "red_thumb_cart.jpg"
+ 			"thumb_cart": "red_thumb_cart.jpg",
+			"style":"red.css"
  		},
  		"variation_2": {
  			"hex": "#FF44FF",
  			"thumb_main": "blue_thumb_main.jpg",
  			"thumb_checkout": "blue_thumb_checkout.jpg",
- 			"thumb_cart": "blur_thumb_cart.jpg"
+ 			"thumb_cart": "blur_thumb_cart.jpg",
+			"style":"blue.css"
  		},
  		"variation_3": {
  			"hex": "#FF3E3E",
  			"thumb_main": "teal_thumb_main.jpg",
  			"thumb_checkout": "teal_thumb_checkout.jpg",
- 			"thumb_cart": "teal_thumb_cart.jpg"
+ 			"thumb_cart": "teal_thumb_cart.jpg",
+			"style":"teal.css"
  		},
  		"variation_4": {
  			"hex": "#A2B3C4",
  			"thumb_main": "gold_thumb_main.jpg",
  			"thumb_checkout": "gold_thumb_checkout.jpg",
- 			"thumb_cart": "gold_thumb_cart.jpg"
+ 			"thumb_cart": "gold_thumb_cart.jpg",
+			"style":"gold.css"
+			
  		},
  		"variation_5": {
  			"hex": "#F4A4A2",
  			"thumb_main": "brown_thumb_main.jpg",
  			"thumb_checkout": "brown_thumb_checkout.jpg",
- 			"thumb_cart": "brown_thumb_cart.jpg"
+ 			"thumb_cart": "brown_thumb_cart.jpg",
+			"style":"brown"
  		}
  	},
  	"pages": {
  		"index": {
+			"name":"Lander",
  			"form": {
- 				"title": {
- 					"html": "<strong>Enter your email address below to reserve _______... it's 100% FREE!</strong>"
- 				},
- 				"submit": {
- 					"html": "Free Instant Access &raquo;"
- 				},
- 				"privacy": {
- 					"html": "<div><i class=\"icon-lock\"></i>We hate SPAM and promise to keep your email address safe. </div>"
- 				},
+				"id": "index-form-id",
+				"name":"Index Page Form",
+				"type":"form",
+				"title":"ORDER YOUR FREE PACK",
+ 				"submit": "Free Instant Access &raquo;",
+ 				"privacy": "<div><i class=\"icon-lock\"></i>We hate SPAM and promise to keep your email address safe. </div>",
+				"action":"[FORM_ACTION]",
  				"form_elements": [{
  					"id": "form--first-name",
  					"name": "From First Name Section",
@@ -222,16 +227,15 @@
  			}]
  		},
  		"checkout": {
+			"name":"Checkout",
  			"form": {
- 				"title": {
-                    "html": "&lt;strong&gt;COMPLETE ORDER FOR YOUR PACKAGE&lt;/strong&gt;"
-                },
-                "submit": {
-                    "html": "Submit"
-                },
- 				"privacy": {
- 					"html": "<div><i class=\"icon-lock\"></i>We hate SPAM and promise to keep your email address safe. </div>"
- 				},
+				"id": "checkout-form-id",
+				"name":"Checkout Page Form",
+				"type":"form",
+				"title":"&lt;strong&gt;COMPLETE ORDER FOR YOUR PACKAGE&lt;/strong&gt;",
+ 				"submit": "Submit",
+ 				"privacy": "<div><i class=\"icon-lock\"></i>We hate SPAM and promise to keep your email address safe. </div>",
+				"action":"[FORM_ACTION]",			
  				"form_elements": [{
  					"id": "form--credit-card",
  					"name": "From Credit Card Section",
@@ -366,6 +370,7 @@
  			}]
  		},
  		"thanks": {
+			"name":"thanks",
  			"elements": [{
  				"id": "container--header-wrapper",
  				"name": "Main Heading Section",
